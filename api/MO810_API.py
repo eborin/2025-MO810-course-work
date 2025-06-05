@@ -1,6 +1,5 @@
-
 from torch.utils.data import Dataset
-import pytorch_lightning as pl
+import lightning as L
 
 class MO810Dataset(Dataset):
     """
@@ -42,7 +41,7 @@ class MO810Dataset(Dataset):
         """
         raise NotImplemented
 
-class MO810DataModule(pl.LightningDataModule):
+class MO810DataModule(L.LightningDataModule):
     """
     Abstract base class for PyTorch Lightning DataModules in the MO810 course work.
     
